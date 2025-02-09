@@ -100,6 +100,7 @@ public class SolutionOne : MonoBehaviour
         }
 
         Debug.Log($"My character {characterName} is a level {characterLevel} {selectedClass} with a CON score of {characterCon} and {(isHillDwarf ? "is" : "is not")} a Hill Dwarf and {(toughFeat ? "has" : "does not have")} the Tough feat. I want the HP { (averageHP ? "averaged" : "rolled") }.");
+        Debug.Log("HP = " +  characterHP);
 
     }
 }

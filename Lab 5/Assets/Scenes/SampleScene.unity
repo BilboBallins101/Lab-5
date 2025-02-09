@@ -229,6 +229,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e547fae875d84c6458ecc1c534f02cf4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  characterName: Queen Peter
+  characterLevel: 8
+  characterCon: 3
+  isHillDwarf: 1
+  toughFeat: 1
+  averageHP: 0
+  selectedClass: Ranger
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
@@ -334,13 +341,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b18ca586e95f47249b1bd3887df21b18, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  characterName: Dr Peter
-  characterLevel: 5
-  characterCon: 10
+  characterName: Poingo
+  characterLevel: 2
+  characterCon: 13
   isHillDwarf: 1
-  toughFeat: 1
-  averageHP: 1
-  selectedClass: Cleric
+  toughFeat: 0
+  averageHP: 0
+  selectedClass: Warlock
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
