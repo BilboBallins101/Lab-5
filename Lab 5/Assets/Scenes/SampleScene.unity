@@ -322,12 +322,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   characterName: Dr Peter
-  characterLevel: 30
-  characterCon: 30
-  isHillDwarf: 0
-  toughFeat: 0
-  averageHP: 0
-  modifiers: fbfffffffcfffffffcfffffffdfffffffdfffffffefffffffeffffffffffffffffffffff00000000000000000100000001000000020000000200000003000000030000000400000004000000050000000500000006000000060000000700000007000000080000000800000009000000090000000a000000
+  characterLevel: 5
+  characterCon: 10
+  isHillDwarf: 1
+  toughFeat: 1
+  averageHP: 1
+  selectedClass: Cleric
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
