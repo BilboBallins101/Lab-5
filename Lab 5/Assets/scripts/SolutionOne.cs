@@ -6,6 +6,7 @@ using UnityEngine.UIElements;
 public class SolutionOne : MonoBehaviour
 {
     public string characterName;
+    public string selectedClass;
     public int characterLevel;
     public int characterCon;
     private float characterHP;
@@ -30,6 +31,7 @@ public class SolutionOne : MonoBehaviour
     {
         -5,-4,-4,-3,-3,-2,-2,-1,-1,0,0,1,1,2,2,3,3,4,4,5,5,6,6,7,7,8,8,9,9,10
     };
+    
 
 
 
@@ -37,7 +39,7 @@ public class SolutionOne : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-      // Debug.LogFormat("My character ")
+      Debug.Log("My character " + characterName + "is a level " + characterLevel);
     }
 
     // Update is called once per frame
@@ -46,12 +48,34 @@ public class SolutionOne : MonoBehaviour
         
     }
 
-    private void GetHP(Dictionary die) //Look over
+    public void rightclass()
+    {
+        if(selectedClass == characterClasses)
+        {
+            selectedClass = characterClasses;
+        }
+        else
+        {
+            Debug.Log("Invalid Class");
+        }
+    }
+
+    private void OnValidate()
+    {
+        characterCon = Mathf.Clamp(characterCon,1,30);
+        characterLevel = Mathf.Clamp(characterLevel,1,30);
+    }
+
+    private void GetHP(Dictionary<string, int> die, string class1, int die2) //Look over
     {
         if(averageHP)
         {
-            characterHP = die * characterLevel / 2 + 0.5;
+            characterHP = ((die2 * characterLevel) / 2f) + 0.5f;
         }
+        //else if(averageHP == false)
+       // {
+            //rolled hp
+        //}
        
     }
 }
